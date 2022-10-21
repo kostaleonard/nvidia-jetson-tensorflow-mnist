@@ -7,7 +7,7 @@ from tensorflow.keras.layers import Dense, Flatten
 
 MNIST_IMAGE_SHAPE = (28, 28)
 MAX_PIXEL_VALUE = 255
-BATCH_SIZE = 4096
+BATCH_SIZE = 512
 
 # TODO explain this in issue
 # https://forums.developer.nvidia.com/t/jetson-nano-running-out-of-memory-resourceexhaustederror-oom-when-allocating-tensor-with-shape-3-3-512-1024/154513/5
