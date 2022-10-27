@@ -2,6 +2,8 @@
 
 Trains MNIST on an NVIDIA Jetson using TensorFlow.
 
+TODO add CI and Dockerfile if needed
+TODO monitor with tegrastats
 TODO links
 
 For training:
