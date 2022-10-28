@@ -35,7 +35,7 @@ def configure_gpu(memory_limit: int) -> None:
 def parse_args(args: List[str]) -> Namespace:
     """Returns the processed command line arguments.
 
-    :param args: The command line arguments; sys.argv.
+    :param args: The command line arguments; sys.argv[1:].
     :return: The processed command line arguments.
     """
     parser = ArgumentParser(description="Trains a neural network on MNIST.")
@@ -60,7 +60,7 @@ def parse_args(args: List[str]) -> Namespace:
 
 def main() -> None:
     """Trains a neural network on MNIST."""
-    args = parse_args(sys.argv)
+    args = parse_args(sys.argv[1:])
     devices = tf.config.get_visible_devices()
     print(f"Found the following devices: {devices}")
     configure_gpu(args.memory_limit)
